@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: 0-bootstrap/single-cluster
-    repoURL: https://github.ibm.com/gitops-air-gap/gitops-airgap-example.git
+    repoURL: https://github.com/airgap-gitops/airgap-gitops.git
     targetRevision: master
   syncPolicy:
     automated:
