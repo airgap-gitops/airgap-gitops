@@ -1,0 +1,22 @@
+# remember to edit ../syncset/image-content-source-policy.properties when changing this file.
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: mirror-config
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - cp.stg.icr.io/cp
+    source: cp.icr.io/cp
+  - mirrors:
+    - cp.stg.icr.io/cp
+    source: icr.io/cpopen
+  - mirrors:
+    - cp.stg.icr.io/cp
+    source: docker.io/ibmcom
+  - mirrors:
+    - hyc-cloud-private-daily-docker-local.artifactory.swg-devops.com/ibmcom
+    source: quay.io/opencloudio
+  - mirrors:
+    - hyc-cloudpak-team-buildmirror-buildmirror-docker-remote.artifactory.swg-devops.com
+    source: docker.io

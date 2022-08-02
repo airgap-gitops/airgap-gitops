@@ -1,0 +1,23 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-operator-catalog 
+  namespace: openshift-marketplace 
+  annotations:
+    "cluster-autoscaler.kubernetes.io/safe-to-evict": "true"
+spec:
+  displayName: IBM Operator Catalog
+  publisher: IBM
+  sourceType: grpc
+  image: icr.io/cpopen/ibm-operator-catalog:latest
+#  grpcPodConfig:
+#    tolerations:
+#      - key: thenode
+#        operator: Equal
+#        value: catnode
+#        effect: NoSchedule
+#    nodeSelector:
+#      env: catpod
+  updateStrategy:
+    registryPoll:
+      interval: 45m

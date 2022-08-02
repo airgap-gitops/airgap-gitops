@@ -1,0 +1,15 @@
+resources:
+- argocd/catsource.yaml
+- argocd/consolenotification.yaml
+patches:
+- target:
+    group: argoproj.io
+    kind: Application
+    labelSelector: "gitops.tier.layer=gitops"
+  patch: |-
+    - op: add
+      path: /spec/source/repoURL
+      value: https://github.com/airgap-gitops/airgap-gitops.git
+    - op: add
+      path: /spec/source/targetRevision
+      value: master
