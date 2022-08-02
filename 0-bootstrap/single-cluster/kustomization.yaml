@@ -21,17 +21,17 @@ patches:
     - op: add
       path: /spec/sourceRepos/-
       value: https://charts.cloudnativetoolkit.dev
-#- target:
-#    group: argoproj.io
-#    kind: AppProject
-#    labelSelector: "gitops.tier.layer=infra"
-#  patch: |-
-#    - op: add
-#      path: /spec/sourceRepos/-
-#      value: https://github.com/air-gap-gitops/multi-tenancy-gitops.git
-#    - op: add
-#      path: /spec/sourceRepos/-
-#      value: https://github.com/air-gap-gitops/multi-tenancy-gitops-infra.git
+- target:
+    group: argoproj.io
+    kind: AppProject
+    labelSelector: "gitops.tier.layer=infra"
+  patch: |-
+    - op: add
+      path: /spec/sourceRepos/-
+      value: https://github.com/air-gap-gitops/multi-tenancy-gitops.git
+    - op: add
+      path: /spec/sourceRepos/-
+      value: https://github.com/air-gap-gitops/multi-tenancy-gitops-infra.git
 #- target:
 #    group: argoproj.io
 #    kind: AppProject
