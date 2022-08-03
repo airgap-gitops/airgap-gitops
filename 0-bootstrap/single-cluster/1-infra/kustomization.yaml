@@ -1,6 +1,6 @@
 resources:
 - argocd/catsource.yaml
-- argocd/consolenotification.yaml
+- argocd/mirror-config.yaml
 patches:
 - target:
     group: argoproj.io
