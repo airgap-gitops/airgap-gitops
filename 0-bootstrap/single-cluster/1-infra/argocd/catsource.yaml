@@ -17,3 +17,7 @@ spec:
   updateStrategy:
     registryPoll:
       interval: 45m
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
