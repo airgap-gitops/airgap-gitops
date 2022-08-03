@@ -9,7 +9,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/airgap-gitops/airgap-gitops.git
+      value: https://github.com/airgap-gitops/airgap-gitops
     - op: add
       path: /spec/source/targetRevision
       value: master
