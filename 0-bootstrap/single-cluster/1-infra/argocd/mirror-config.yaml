@@ -26,8 +26,8 @@ spec:
   - mirrors:
     - hyc-cloudpak-team-buildmirror-buildmirror-docker-remote.artifactory.swg-devops.com
     source: docker.io
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+#  syncPolicy:
+#    automated:
+#      prune: true
+#      selfHeal: true
 
