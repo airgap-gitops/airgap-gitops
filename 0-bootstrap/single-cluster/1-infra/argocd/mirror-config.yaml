@@ -25,7 +25,7 @@ spec:
     source: quay.io/opencloudio
   - mirrors:
     - hyc-cloudpak-team-buildmirror-buildmirror-docker-remote.artifactory.swg-devops.com
-    source: docker.io
+    source: docker2.io
 #  syncPolicy:
 #    automated:
 #      prune: true
