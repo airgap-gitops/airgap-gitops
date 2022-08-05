@@ -1,4 +1,3 @@
-# remember to edit ../syncset/image-content-source-policy.properties when changing this file.
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
@@ -7,8 +6,6 @@ metadata:
     gitops.tier.layer: infra
   annotations:
     argocd.argoproj.io/sync-wave: "100"
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   repositoryDigestMirrors:
   - mirrors:
@@ -26,8 +23,4 @@ spec:
   - mirrors:
     - hyc-cloudpak-team-buildmirror-buildmirror-docker-remote.artifactory.swg-devops.com
     source: docker2.io
-#  syncPolicy:
-#    automated:
-#      prune: true
-#      selfHeal: true
 
