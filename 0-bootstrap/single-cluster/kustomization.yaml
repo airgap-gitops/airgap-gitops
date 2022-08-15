@@ -8,7 +8,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/airgap-gitops/airgap-gitops
+      value: https://github.com/joehuizenga/curated-catalogs
     - op: add
       path: /spec/source/targetRevision
       value: master
@@ -26,7 +26,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/airgap-gitops/airgap-gitops
+      value: https://github.com/joehuizenga/curated-catalogs
 - target:
     group: argoproj.io
     kind: Application

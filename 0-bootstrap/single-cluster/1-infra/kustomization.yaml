@@ -1,6 +1,8 @@
 resources:
-- argocd/catsource.yaml
-- argocd/mirror-config.yaml
+#- argocd/catsource.yaml
+#- argocd/mirror-config.yaml
+- catalog-sources.yaml
+- image-content-source-policy.yaml
 patches:
 - target:
     group: argoproj.io
@@ -9,7 +11,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/airgap-gitops/airgap-gitops
+      value: https://github.com/joehuizenga/curated-catalogs
     - op: add
       path: /spec/source/targetRevision
       value: master

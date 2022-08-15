@@ -9,9 +9,12 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/single-cluster
-    repoURL: https://github.com/airgap-gitops/airgap-gitops
-    targetRevision: master
+#    path: 0-bootstrap/single-cluster
+#    repoURL: https://github.com/airgap-gitops/airgap-gitops
+    path: clusterConfig
+    repoURL: https://github.com/joehuizenga/curated-catalogs
+#    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
